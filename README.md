@@ -1,6 +1,6 @@
-# simple-cipher-lab
+##Simple Cipher
 
-## Step 1
+###Step 1
 
 "If he had anything confidential to say, he wrote it in cipher, that is,
 by so changing the order of the letters of the alphabet, that not a word
@@ -21,7 +21,10 @@ being a couple letters off was sufficient so that people couldn't
 recognize the few words that they did know.
 
 Your task is to create a simple shift cipher like the Caesar Cipher.
-This image is a great example of the Caesar Cipher: ![Caesar Cipher][1]
+This image is a great example of the Caesar Cipher:
+
+
+![Caesar Cipher][1]
 
 Here are some examples:
 
@@ -29,7 +32,7 @@ Here are some examples:
     @cipher.encode("iamapandabear") #=> "ldpdsdqgdehdu"
     @cipher.decode("ldpdsdqgdehdu") #=> "iamapandabear"
 
-## Step 2
+###Step 2
 
 Shift ciphers are no fun though when your kid sister figures it out. Try
 amending the code to allow us to specify a key and use that for the
@@ -47,7 +50,7 @@ plaintext is added to the key, we end up with the same message coming
 out. So "aaaa" is not an ideal key. But if we set the key to "dddd", we
 would get the same thing as the Caesar Cipher.
 
-## Step 3
+###Step 3
 
 The weakest link in any cipher is the human being. Let's make your
 substitution cipher a little more fault tolerant by providing a source
@@ -65,7 +68,7 @@ Some examples:
     @cipher = Cipher.new
     @cipher.key #=> "duxrceqyaimciuucnelkeoxjhdyduucpmrxmaivacmybmsdrzwqxvbxsygzsabdjmdjabeorttiwinfrpmpogvabiofqexnohrqu"
 
-## Extensions
+###Extensions
 
 Shift ciphers work by making the text slightly odd, but are vulnerable
 to frequency analysis. Substitution ciphers help that, but are still
@@ -79,3 +82,25 @@ on Wikipedia][dh] for one of the first implementations of this scheme.
 
 [1]: http://upload.wikimedia.org/wikipedia/en/7/75/Caesar3.png
 [dh]: http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
+
+
+###How to Run this Lab
+
++ Clone the repository
++ Open **index.html** in your browser to see the currently failing test specs you are to pass
++ Open the repository in your favorite text editor to explore the different files
++ Open **js\simple-cipher.js** and write the function(s) or lines of code to pass the tests
++ You could refresh **index.html** in your browser intermittently to see the status of test specs.
+
+
+###Notes
+
++ Prior understanding of Javascript classes, returning, and conditional statements will be required to complete this exercise.
+
++ Remember that passing code is just the first step. The goal is to work towards a solution that is as readable and expressive as you can make
+it.
+
++ Please make your solution as general as possible. Good code doesn't just pass the test suite, it works with any input that fits the specification.
+
+Have fun!
+
